@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Entrar</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
+</head>
+<body>
+	<div class="coantainer">
+		<div class="row">		
+			<div class="span1"></div>
+			<div class="span4">
+			<br>
+			<h4>Zona de registro de usuarios para la BD</h4>
+				<form action="guardar.php" method="post">					
+					<hr>
+					<input type="text" placeholder="Nombre del usuario" name="nom">
+					<br>
+					<input type="text" placeholder="Dirección" name="dir">
+					<br>
+					<input type="submit" class="btn btn-lg btn-primary" value="Insertar">
+				</form>
+				<form action="consultar.php">
+					<input type="submit" class="btn btn-lg btn-success" value="Consultar">
+				</form>
+			</div>		
+			<div class="span3">
+			<br>
+			<h4>Zona de eliminación por id</h4>
+			<hr>
+				<form action="eliminar.php" method="post">
+					<input type="number" placeholder="Id a eliminar" name="id">
+					<br>
+					<input type="submit" class="btn btn-lg btn-danger" value="Eliminar">
+				</form>
+			</div>	
+			<div class="span3">
+			<br>
+			<h4>Zona de modificar</h4>
+			<hr>
+				<form action="modificar.php" method="post">
+					<input type="number" name="id" placeholder="ID del cliente">
+					<br>
+					<input type="text" name="nom" placeholder="Nombre">
+					<br>
+					<input type="text" name="dir" placeholder="Dirección">
+					<br>
+					<input type="submit" class="btn btn-lg btn-warning" value="Modificar">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
